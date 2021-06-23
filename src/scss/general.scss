@@ -10,7 +10,16 @@
   src: url('../fonts/Roboto-Bold.ttf');
 }
 
+@mixin heading($fz, $lh) {
+  font-weight: bold;
+  font-size: $fz;
+  line-height: $lh;
+  text-transform: uppercase;
+}
+
 body {
+  position: relative;
+
   color: $dark-gray;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -20,17 +29,15 @@ body {
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 45px;
-  text-transform: uppercase;
+  @include heading(30px, 45px);
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
-  text-transform: uppercase;
+  @include heading(18px, 27px);
+}
+
+.container {
+  margin: 0 auto;
 }
 
 @media (min-width: 769px) {
@@ -42,5 +49,11 @@ h2 {
   h2 {
     font-size: 38px;
     line-height: 57px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1200px;
   }
 }

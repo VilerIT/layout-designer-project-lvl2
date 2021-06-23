@@ -1,0 +1,7 @@
+@mixin bg($name, $color) {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+@include bg('dark', $dark);

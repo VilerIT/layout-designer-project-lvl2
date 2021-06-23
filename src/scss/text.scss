@@ -1,0 +1,8 @@
+@mixin color($name, $color) {
+  .c-#{$name} {
+    color: $color;
+  }
+}
+
+@include color('white', $white);
+@include color('dark-gray', $dark-gray);
