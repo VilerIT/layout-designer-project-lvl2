@@ -17,5 +17,6 @@
       "empty-line-between-groups": true
     }],
     "order/properties-alphabetical-order": null
-  }
+  },
+  "ignoreFiles": ["**/*.css"]
 }
