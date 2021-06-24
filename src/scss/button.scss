@@ -1,0 +1,14 @@
+.btn {
+  padding: 20px 30px;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: $green;
+}
+
+.btn-green:hover {
+  background-color: $dark-green;
+}

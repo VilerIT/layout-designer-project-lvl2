@@ -6,3 +6,11 @@
 
 @include color('white', $white);
 @include color('dark-gray', $dark-gray);
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}

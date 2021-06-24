@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="p-absolute">
-    <div class="d-flex flex-column container">
+    <div class="d-flex flex-column container p-0">
       <a class="d-flex c-white align-items-center fw-bold logo" href="index.html">
         <img src="images/logo.svg" alt="Логотип Music Box, изображена нота.">
         <span class="ml-16 fz-11 text-uppercase">Music Box</span>
@@ -33,5 +33,25 @@
       <input class="bg-dark c-white search" placeholder="Поиск..." type="text">
     </div>
   </header>
+  <main>
+    <section id="page-description" class="bg-banner text-center">
+      <div class="container">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>без ограничений</h2>
+        <p class="c-white">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="banner-form m-0-auto">
+          <div class="row">
+            <label class="sr-only" for="name">Имя</label>
+            <input id="name" class="text-input bg-unset col" name="name" type="text" placeholder="Имя">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" class="text-input bg-unset col" name="email" type="email" placeholder="Email">
+          </div>
+          <div class="row">
+            <input class="btn btn-green text-uppercase col" type="submit" value="Получить доступ">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

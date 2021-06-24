@@ -1,0 +1,28 @@
+input {
+  border: unset;
+
+  outline: none;
+}
+
+.banner-form {
+  max-width: 570px;
+
+  input {
+    min-width: 270px;
+    min-height: 50px;
+
+    color: $white;
+  }
+}
+
+.text-input {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+
+  border: 2px solid $dark-gray;
+  border-radius: 3px;
+}
+
+.text-input::placeholder {
+  color: $white;
+}

@@ -1,7 +1,17 @@
-@mixin bg($name, $color) {
+@mixin bg-color($name, $color) {
   .bg-#{$name} {
     background-color: $color;
   }
 }
 
-@include bg('dark', $dark);
+@include bg-color('dark', $dark);
+
+.bg-unset {
+  background-color: unset;
+}
+
+.bg-banner {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+}
