@@ -1,5 +1,5 @@
 compile:
-	sass src/scss/global.scss src/css/style.css
+	sass src/scss/app.scss src/css/style.css
 
 lint:
 	npx stylelint ./src/scss/*.scss
