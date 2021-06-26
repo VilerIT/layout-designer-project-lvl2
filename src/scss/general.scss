@@ -11,19 +11,14 @@
 }
 
 @mixin heading($fz, $lh) {
-  margin: 0;
-
-  color: $white;
-  font-weight: bold;
   font-size: $fz;
   line-height: $lh;
-  text-transform: uppercase;
 }
 
 @mixin container-width($lower, $upper) {
   @media (min-width: $lower) and (max-width: $upper) {
     .container {
-      max-width: $lower;
+      max-width: $lower - 40px;
     }
   }
 }
@@ -35,6 +30,8 @@
 body {
   margin: 0;
 
+  overflow-x: hidden;
+
   color: $dark-gray;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -43,12 +40,28 @@ body {
   background-color: $black;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: $white;
+
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 h1 {
   @include heading(30px, 45px);
+  margin: 0;
 }
 
 h2 {
   @include heading(18px, 27px);
+  margin: 0;
+}
+
+h3 {
+  @include heading(16px, 24px);
 }
 
 p {
@@ -57,7 +70,6 @@ p {
 
 .container {
   margin: 0 auto;
-  padding: 200px 0;
 }
 
 .sr-only {
@@ -81,13 +93,16 @@ p {
 
 @media (min-width: 769px) {
   h1 {
-    font-size: 60px;
-    line-height: 90px;
+    @include heading(60px, 90px);
   }
 
   h2 {
-    font-size: 38px;
-    line-height: 57px;
+    @include heading(38px, 57px);
+  }
+
+  h3 {
+    @include heading(24px, 45px);
+    font-weight: normal;
   }
 }
 
@@ -105,6 +120,14 @@ p {
 
 // Laptop L
 @include container-width(1024px, 1239px);
+
+// !!! FOR TESTS. REMOVE AFTER COMPLETION.
+
+@media (width: 414px) {
+  .container {
+    max-width: 374px;
+  }
+}
 
 @media (min-width: 1240px) {
   .container {

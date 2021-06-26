@@ -14,6 +14,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: #cacaca;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -21,22 +22,30 @@ body {
   background-color: #08020d;
 }
 
-h1 {
-  margin: 0;
+h1,
+h2,
+h3,
+h4 {
   color: #fff;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 45px;
   text-transform: uppercase;
 }
 
-h2 {
+h1 {
+  font-size: 30px;
+  line-height: 45px;
   margin: 0;
-  color: #fff;
-  font-weight: bold;
+}
+
+h2 {
   font-size: 18px;
   line-height: 27px;
-  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 p {
@@ -45,7 +54,6 @@ p {
 
 .container {
   margin: 0 auto;
-  padding: 200px 0;
 }
 
 .sr-only {
@@ -71,30 +79,41 @@ p {
     font-size: 38px;
     line-height: 57px;
   }
+
+  h3 {
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: normal;
+  }
 }
 @media (min-width: 320px) and (max-width: 374px) {
   .container {
-    max-width: 320px;
+    max-width: 280px;
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   .container {
-    max-width: 375px;
+    max-width: 335px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .container {
-    max-width: 425px;
+    max-width: 385px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
-    max-width: 768px;
+    max-width: 728px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1239px) {
   .container {
-    max-width: 1024px;
+    max-width: 984px;
+  }
+}
+@media (width: 414px) {
+  .container {
+    max-width: 374px;
   }
 }
 @media (min-width: 1240px) {
@@ -122,45 +141,101 @@ p {
   align-items: center;
 }
 
-.ml-16 {
-  margin-left: 16px;
-}
-
 .m-0-auto {
   margin: 0 auto;
 }
 
-.p-0 {
-  padding: 0;
+.mx-12 {
+  margin: 0 12px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.m-25 {
+  margin: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.my-64 {
+  margin: 64px 0;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.py-200 {
+  padding: 200px 0;
 }
 
 .fz-11 {
   font-size: 11px;
 }
 
+.fz-16 {
+  font-size: 16px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -12px;
 }
 
 .col {
   flex: 1 0 0;
-  margin: 0 12px;
+}
+
+.row-mx-12 {
+  margin: 0 -12px;
+}
+
+.row-mx-25 {
+  margin: 0 -25px;
 }
 
 .bg-dark {
   background-color: #3c3b3d;
 }
 
-.bg-unset {
-  background-color: unset;
-}
-
 .bg-banner {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
+}
+
+.bg-subscribe-1 {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-subscribe-2 {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-subscribe-3 {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-unset {
+  background-color: unset;
 }
 
 .c-white {
@@ -177,6 +252,10 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.text-small {
+  font-size: 0.8rem;
 }
 
 header {
@@ -217,7 +296,6 @@ header {
   padding: 5px 10px;
   border: unset;
   border-radius: 50px;
-  outline: none;
 }
 .search::placeholder {
   text-transform: uppercase;
@@ -272,17 +350,46 @@ input {
 }
 
 .btn {
+  width: 100%;
   padding: 20px 30px;
   border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: unset;
   cursor: pointer;
 }
 
 .btn-green {
   background-color: #34c176;
 }
-
 .btn-green:hover {
   background-color: #2db36b;
+}
+
+.btn-outline-white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn-outline-white:hover {
+  color: #08020d;
+  background-color: #fff;
+}
+
+.card {
+  margin: 25px;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-price {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 1em;
+}
+.card-price-value {
+  font-size: 2em;
+  line-height: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

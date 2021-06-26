@@ -1,14 +1,33 @@
 .btn {
+  width: 100%;
+
   padding: 20px 30px;
   border-radius: 5px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: unset;
 
   cursor: pointer;
 }
 
 .btn-green {
   background-color: $green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
 }
 
-.btn-green:hover {
-  background-color: $dark-green;
+.btn-outline-white {
+  border: 1px solid $white;
+
+  color: $white;
+
+  &:hover {
+    color: $black;
+
+    background-color: $white;
+  }
 }

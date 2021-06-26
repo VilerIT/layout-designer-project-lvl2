@@ -18,18 +18,50 @@
   align-items: center;
 }
 
-.ml-16 {
-  margin-left: 16px;
-}
-
 .m-0-auto {
   margin: 0 auto;
 }
 
-.p-0 {
-  padding: 0;
+.mx-12 {
+  margin: 0 12px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.m-25 {
+  margin: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.my-64 {
+  margin: 64px 0;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.py-200 {
+  padding: 200px 0;
 }
 
 .fz-11 {
   font-size: 11px;
+}
+
+.fz-16 {
+  font-size: 16px;
 }

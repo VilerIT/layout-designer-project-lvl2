@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Home - Music Box</title>
+  <title>Главная - Music Box</title>
 </head>
 <body>
   <header class="p-absolute">
-    <div class="d-flex flex-column container p-0">
+    <div class="d-flex flex-column container">
       <a class="d-flex c-white align-items-center fw-bold logo" href="index.html">
         <img src="images/logo.svg" alt="Логотип Music Box, изображена нота.">
         <span class="ml-16 fz-11 text-uppercase">Music Box</span>
@@ -34,22 +34,59 @@
     </div>
   </header>
   <main>
-    <section id="page-description" class="bg-banner text-center">
+    <section id="page-description" class="bg-banner text-center py-200">
       <div class="container">
         <h1>Онлайн музыка где угодно</h1>
         <h2>без ограничений</h2>
         <p class="c-white">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
         <form class="banner-form m-0-auto">
-          <div class="row">
+          <div class="row row-mx-12">
             <label class="sr-only" for="name">Имя</label>
-            <input id="name" class="text-input bg-unset col" name="name" type="text" placeholder="Имя" required>
+            <input id="name" class="text-input bg-unset col mx-12" name="name" type="text" placeholder="Имя" required>
             <label class="sr-only" for="email">Email</label>
-            <input id="email" class="text-input bg-unset col" name="email" type="email" placeholder="Email" required>
+            <input id="email" class="text-input bg-unset col mx-12" name="email" type="email" placeholder="Email" required>
           </div>
-          <div class="row">
-            <input class="btn btn-green text-uppercase col" type="submit" value="Получить доступ">
+          <div class="row row-mx-12">
+            <input class="btn btn-green col mx-12" type="submit" value="Получить доступ">
           </div>
         </form>
+      </div>
+    </section>
+    <section id="page-pricing" class="pt-100 text-center">
+      <div class="container">
+        <h2 class="mb-25">Формы подписки</h2>
+        <div>
+          <div class="row row-mx-25">
+            <div class="col card m-25 bg-subscribe-1 c-white">
+              <h3 class="mb-200">Бесплатная</h3>
+              <p class="card-price text-uppercase">
+                <span class="card-price-value">0</span>
+                <span class="ml-16">руб.</span>
+              </p>
+              <button type="button" class="btn btn-outline-white fz-16">Оформить</button>
+              <p class="text-small my-64">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+            </div>
+            <div class="col card m-25 bg-subscribe-2 c-white">
+              <h3 class="mb-200">Стандартная</h3>
+              <p class="card-price text-uppercase">
+                <span class="card-price-value">250</span>
+                <span class="ml-16">руб.</span>
+              </p>
+              <button type="button" class="btn btn-outline-white fz-16">Оформить</button>
+              <p class="text-small my-64">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+            </div>
+            <div class="col card m-25 bg-subscribe-3 c-white">
+              <h3 class="mb-200">Премиум</h3>
+              <p class="card-price text-uppercase">
+                <span class="card-price-value">500</span>
+                <span class="ml-16">руб.</span>
+              </p>
+              <button type="button" class="btn btn-outline-white fz-16">Оформить</button>
+              <p class="text-small my-64">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+            </div>
+          </div>
+          <p class="c-white">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+        </div>
       </div>
     </section>
   </main>

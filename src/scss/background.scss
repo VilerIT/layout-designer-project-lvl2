@@ -4,14 +4,20 @@
   }
 }
 
+@mixin bg-image($name, $url) {
+  .bg-#{$name} {
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 @include bg-color('dark', $dark);
+@include bg-image('banner', '../images/banner.png');
+@include bg-image('subscribe-1', '../images/subscribe_1.png');
+@include bg-image('subscribe-2', '../images/subscribe_2.png');
+@include bg-image('subscribe-3', '../images/subscribe_3.png');
 
 .bg-unset {
   background-color: unset;
-}
-
-.bg-banner {
-  background-image: url('../images/banner.png');
-  background-position: center;
-  background-size: cover;
 }
