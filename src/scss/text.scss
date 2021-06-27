@@ -6,6 +6,7 @@
 
 @include color('white', $white);
 @include color('dark-gray', $dark-gray);
+@include color('orange', $orange);
 
 .text-uppercase {
   text-transform: uppercase;

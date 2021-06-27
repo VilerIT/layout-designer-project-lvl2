@@ -12,22 +12,30 @@
   cursor: pointer;
 }
 
-.btn-green {
-  background-color: $green;
+@mixin btn($name, $color, $hover-color) {
+  .btn-#{$name} {
+    background-color: $color;
 
-  &:hover {
-    background-color: $dark-green;
+    &:hover {
+      background-color: $hover-color;
+    }
   }
 }
 
-.btn-outline-white {
-  border: 1px solid $white;
+@mixin btn-outline($name, $color, $text-color, $hover-text-color) {
+  .btn-outline-#{$name} {
+    border: 1px solid $color;
 
-  color: $white;
+    color: $text-color;
 
-  &:hover {
-    color: $black;
+    &:hover {
+      color: $hover-text-color;
 
-    background-color: $white;
+      background-color: $color;
+    }
   }
 }
+
+@include btn('green', $green, $dark-green);
+@include btn-outline('white', $white, $white, $black);
+@include btn-outline('dark-gray', $dark-gray, $dark-gray, $black)

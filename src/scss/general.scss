@@ -33,7 +33,7 @@ body {
 
   overflow-x: hidden;
 
-  color: $dark-gray;
+  color: $white;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
@@ -45,8 +45,6 @@ h1,
 h2,
 h3,
 h4 {
-  color: $white;
-
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -110,7 +108,7 @@ p {
 @each $min, $max in $viewport-widths {
   @media (min-width: $min) and (max-width: $max) {
     .container {
-      max-width: $min - 30px;
+      max-width: $min - 40px;
     }
   }
 }

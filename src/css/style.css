@@ -15,7 +15,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  color: #cacaca;
+  color: #fff;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -26,7 +26,6 @@ h1,
 h2,
 h3,
 h4 {
-  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -88,27 +87,27 @@ p {
 }
 @media (min-width: 320px) and (max-width: 374px) {
   .container {
-    max-width: 290px;
+    max-width: 280px;
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   .container {
-    max-width: 345px;
+    max-width: 335px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .container {
-    max-width: 395px;
+    max-width: 385px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
-    max-width: 738px;
+    max-width: 728px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1239px) {
   .container {
-    max-width: 994px;
+    max-width: 984px;
   }
 }
 @media (width: 414px) {
@@ -145,16 +144,24 @@ p {
   margin: 0 auto;
 }
 
+.m-25 {
+  margin: 25px;
+}
+
 .mx-12 {
   margin: 0 12px;
+}
+
+.my-64 {
+  margin: 64px 0;
 }
 
 .ml-16 {
   margin-left: 16px;
 }
 
-.m-25 {
-  margin: 25px;
+.mt-0 {
+  margin-top: 0;
 }
 
 .mt-25 {
@@ -165,20 +172,28 @@ p {
   margin-bottom: 25px;
 }
 
-.my-64 {
-  margin: 64px 0;
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-65 {
+  margin-bottom: 65px;
 }
 
 .mb-200 {
   margin-bottom: 200px;
 }
 
+.py-200 {
+  padding: 200px 0;
+}
+
 .pt-100 {
   padding-top: 100px;
 }
 
-.py-200 {
-  padding: 200px 0;
+.w-100 {
+  width: 100%;
 }
 
 .fz-11 {
@@ -196,6 +211,10 @@ p {
 
 .col {
   flex: 1 0 0;
+}
+
+.row-m-25 {
+  margin: -25px;
 }
 
 .row-mx-12 {
@@ -244,6 +263,10 @@ p {
 
 .c-dark-gray {
   color: #cacaca;
+}
+
+.c-orange {
+  color: #f89202;
 }
 
 .text-uppercase {
@@ -375,6 +398,15 @@ input {
   background-color: #fff;
 }
 
+.btn-outline-dark-gray {
+  border: 1px solid #cacaca;
+  color: #cacaca;
+}
+.btn-outline-dark-gray:hover {
+  color: #08020d;
+  background-color: #cacaca;
+}
+
 .card {
   margin: 25px;
   padding: 0 1.5rem;
@@ -390,6 +422,38 @@ input {
 .card-price-value {
   font-size: 2em;
   line-height: 1em;
+}
+
+.news-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.news-author {
+  margin: 24px -8px 48px;
+}
+.news-author * {
+  margin: 0 8px;
+}
+
+.news-button {
+  display: inline-block;
+  width: auto;
+  padding: 16px 30px;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 769px) {
+  .news-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .news-lg-reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

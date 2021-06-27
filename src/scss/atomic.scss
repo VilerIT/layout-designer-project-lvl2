@@ -22,16 +22,24 @@
   margin: 0 auto;
 }
 
+.m-25 {
+  margin: 25px;
+}
+
 .mx-12 {
   margin: 0 12px;
+}
+
+.my-64 {
+  margin: 64px 0;
 }
 
 .ml-16 {
   margin-left: 16px;
 }
 
-.m-25 {
-  margin: 25px;
+.mt-0 {
+  margin-top: 0;
 }
 
 .mt-25 {
@@ -42,20 +50,28 @@
   margin-bottom: 25px;
 }
 
-.my-64 {
-  margin: 64px 0;
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-65 {
+  margin-bottom: 65px;
 }
 
 .mb-200 {
   margin-bottom: 200px;
 }
 
+.py-200 {
+  padding: 200px 0;
+}
+
 .pt-100 {
   padding-top: 100px;
 }
 
-.py-200 {
-  padding: 200px 0;
+.w-100 {
+  width: 100%;
 }
 
 .fz-11 {
