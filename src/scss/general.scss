@@ -1,3 +1,12 @@
+// $min: $max
+$viewport-widths: (
+  320px: 374px, // Mobile M
+  375px: 424px, // Mobile L
+  425px: 767px, // Tablet
+  768px: 1023px, // Laptop
+  1024px: 1239px, // Laptop L
+);
+
 @font-face {
   font-weight: normal;
   font-family: 'Roboto';
@@ -13,14 +22,6 @@
 @mixin heading($fz, $lh) {
   font-size: $fz;
   line-height: $lh;
-}
-
-@mixin container-width($lower, $upper) {
-  @media (min-width: $lower) and (max-width: $upper) {
-    .container {
-      max-width: $lower - 40px;
-    }
-  }
 }
 
 * {
@@ -106,20 +107,13 @@ p {
   }
 }
 
-// Mobile M
-@include container-width(320px, 374px);
-
-// Mobile L
-@include container-width(375px, 424px);
-
-// Tablet
-@include container-width(425px, 767px);
-
-// Laptop
-@include container-width(768px, 1023px);
-
-// Laptop L
-@include container-width(1024px, 1239px);
+@each $min, $max in $viewport-widths {
+  @media (min-width: $min) and (max-width: $max) {
+    .container {
+      max-width: $min - 30px;
+    }
+  }
+}
 
 // !!! FOR TESTS. REMOVE AFTER COMPLETION.
 

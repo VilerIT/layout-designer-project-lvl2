@@ -88,27 +88,27 @@ p {
 }
 @media (min-width: 320px) and (max-width: 374px) {
   .container {
-    max-width: 280px;
+    max-width: 290px;
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   .container {
-    max-width: 335px;
+    max-width: 345px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .container {
-    max-width: 385px;
+    max-width: 395px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
-    max-width: 728px;
+    max-width: 738px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1239px) {
   .container {
-    max-width: 984px;
+    max-width: 994px;
   }
 }
 @media (width: 414px) {
