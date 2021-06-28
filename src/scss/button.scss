@@ -12,6 +12,12 @@
   cursor: pointer;
 }
 
+.link-btn {
+  display: inline-block;
+
+  width: auto;
+}
+
 @mixin btn($name, $color, $hover-color) {
   .btn-#{$name} {
     background-color: $color;
@@ -36,6 +42,14 @@
   }
 }
 
+.download-button {
+  padding: 16px 40px;
+  border-radius: 32px;
+
+  text-transform: none;
+}
+
 @include btn('green', $green, $dark-green);
+@include btn('red', $red, $dark-red);
 @include btn-outline('white', $white, $white, $black);
 @include btn-outline('dark-gray', $dark-gray, $dark-gray, $black)

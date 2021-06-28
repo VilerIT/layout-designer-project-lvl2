@@ -15,10 +15,6 @@
 }
 
 .news-button {
-  display: inline-block;
-
-  width: auto;
-
   padding: 16px 30px;
 
   font-size: 0.8rem;
@@ -28,9 +24,5 @@
   .news-title {
     font-size: 30px;
     line-height: 45px;
-  }
-
-  .news-lg-reverse {
-    flex-direction: row-reverse;
   }
 }
