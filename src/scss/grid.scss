@@ -1,3 +1,7 @@
+.flex-column {
+  flex-direction: column;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -15,12 +19,20 @@
   margin: 0 -12px;
 }
 
+.row-mx-20 {
+  margin: 0 -20px;
+}
+
 .row-mx-25 {
   margin: 0 -25px;
 }
 
 @media (min-width: 769px) {
-  .row-lg-reverse {
+  .flex-md-row {
+    flex-direction: row;
+  }
+
+  .row-md-reverse {
     flex-direction: row-reverse;
   }
 }

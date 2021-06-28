@@ -4,8 +4,6 @@ header {
   left: 0;
 
   width: 100%;
-
-  margin: 0 auto;
 }
 
 .logo {
@@ -18,22 +16,6 @@ header {
 
   img {
     width: 24px;
-  }
-}
-
-.menu {
-  padding: 0;
-
-  list-style-type: none;
-
-  a {
-    color: $dark-gray;
-    text-decoration: none;
-  }
-
-  a:hover,
-  .active {
-    color: $white;
   }
 }
 
@@ -53,12 +35,11 @@ header {
 
 @media (min-width: 769px) {
   header .container,
-  .menu {
-    flex-direction: row;
+  header .menu {
     align-items: center;
   }
 
-  .menu {
+  header .menu {
     margin: 0 -12px;
 
     li {

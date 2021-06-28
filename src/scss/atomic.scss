@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.flex-column {
-  flex-direction: column;
-}
-
 .p-absolute {
   position: absolute;
 }
@@ -34,6 +30,10 @@
   margin: 0 12px;
 }
 
+.mx-20 {
+  margin: 0 20px;
+}
+
 .my-64 {
   margin: 64px 0;
 }
@@ -48,6 +48,10 @@
 
 .mt-25 {
   margin-top: 25px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mb-25 {
@@ -68,6 +72,14 @@
 
 .mb-200 {
   margin-bottom: 200px;
+}
+
+.py-2rem {
+  padding: 2rem 0;
+}
+
+.py-3rem {
+  padding: 3rem 0;
 }
 
 .py-200 {

@@ -69,6 +69,20 @@ p {
   clip-path: inset(50%);
 }
 
+.menu {
+  padding: 0;
+  list-style-type: none;
+}
+.menu a,
+.menu .menu-item {
+  color: #cacaca;
+  text-decoration: none;
+}
+.menu a:hover,
+.menu .active {
+  color: #fff;
+}
+
 @media (min-width: 769px) {
   h1 {
     font-size: 60px;
@@ -125,10 +139,6 @@ p {
   display: flex;
 }
 
-.flex-column {
-  flex-direction: column;
-}
-
 .p-absolute {
   position: absolute;
 }
@@ -157,6 +167,10 @@ p {
   margin: 0 12px;
 }
 
+.mx-20 {
+  margin: 0 20px;
+}
+
 .my-64 {
   margin: 64px 0;
 }
@@ -171,6 +185,10 @@ p {
 
 .mt-25 {
   margin-top: 25px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mb-25 {
@@ -193,6 +211,14 @@ p {
   margin-bottom: 200px;
 }
 
+.py-2rem {
+  padding: 2rem 0;
+}
+
+.py-3rem {
+  padding: 3rem 0;
+}
+
 .py-200 {
   padding: 200px 0;
 }
@@ -213,6 +239,10 @@ p {
   font-size: 16px;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -230,12 +260,20 @@ p {
   margin: 0 -12px;
 }
 
+.row-mx-20 {
+  margin: 0 -20px;
+}
+
 .row-mx-25 {
   margin: 0 -25px;
 }
 
 @media (min-width: 769px) {
-  .row-lg-reverse {
+  .flex-md-row {
+    flex-direction: row;
+  }
+
+  .row-md-reverse {
     flex-direction: row-reverse;
   }
 }
@@ -271,6 +309,10 @@ p {
   background-color: unset;
 }
 
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
 .c-white {
   color: #fff;
 }
@@ -300,7 +342,6 @@ header {
   right: 0;
   left: 0;
   width: 100%;
-  margin: 0 auto;
 }
 
 .logo {
@@ -312,19 +353,6 @@ header {
 }
 .logo img {
   width: 24px;
-}
-
-.menu {
-  padding: 0;
-  list-style-type: none;
-}
-.menu a {
-  color: #cacaca;
-  text-decoration: none;
-}
-.menu a:hover,
-.menu .active {
-  color: #fff;
 }
 
 .search {
@@ -340,15 +368,14 @@ header {
 
 @media (min-width: 769px) {
   header .container,
-.menu {
-    flex-direction: row;
+header .menu {
     align-items: center;
   }
 
-  .menu {
+  header .menu {
     margin: 0 -12px;
   }
-  .menu li {
+  header .menu li {
     margin: 0 12px;
   }
 
@@ -479,6 +506,41 @@ input {
   .news-title {
     font-size: 30px;
     line-height: 45px;
+  }
+}
+.footer-section {
+  width: 100%;
+  white-space: nowrap;
+}
+.footer-section h2 {
+  font-size: 18px;
+  line-height: 27px;
+}
+.footer-section a,
+.footer-section .menu-item {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.footer-splitter {
+  margin: 0;
+  border-bottom: 1px solid #cacaca;
+}
+
+.footer-nav {
+  margin: -8px;
+}
+.footer-nav li {
+  margin: 8px;
+}
+
+@media (min-width: 1023px) {
+  .footer-section {
+    flex-wrap: nowrap;
   }
 }
 

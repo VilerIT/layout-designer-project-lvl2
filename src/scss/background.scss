@@ -21,3 +21,7 @@
 .bg-unset {
   background-color: unset;
 }
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, $purple 32.83%, $red 81.56%);
+}
