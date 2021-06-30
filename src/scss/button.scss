@@ -1,7 +1,7 @@
 .btn {
-  width: 100%;
-
   padding: 20px 30px;
+
+  border: unset;
   border-radius: 5px;
 
   text-transform: uppercase;
@@ -14,8 +14,6 @@
 
 .link-btn {
   display: inline-block;
-
-  width: auto;
 }
 
 @mixin btn($name, $color, $hover-color) {
@@ -51,5 +49,6 @@
 
 @include btn('green', $green, $dark-green);
 @include btn('red', $red, $dark-red);
+@include btn('purple', $purple, $dark-purple);
 @include btn-outline('white', $white, $white, $black);
 @include btn-outline('dark-gray', $dark-gray, $dark-gray, $black)

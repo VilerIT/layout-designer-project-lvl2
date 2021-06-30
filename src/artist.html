@@ -6,25 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
-  <title>Исполнители - Music Box</title>
+  <title>Morten Harket — Music Box</title>
 </head>
 <body>
   <header class="p-absolute">
-    <div class="d-flex flex-column container">
+    <div class="d-flex flex-column flex-md-row container">
       <a class="d-flex c-white align-items-center fw-bold logo" href="index.html">
         <img src="images/logo.svg" alt="Логотип Music Box, изображена нота.">
         <span class="ml-16 fz-11 text-uppercase">Music Box</span>
       </a>
       <nav class="menu-nav">
-        <ul class="d-flex flex-column fz-11 fw-bold text-uppercase menu">
+        <ul class="d-flex flex-column flex-md-row fz-11 fw-bold text-uppercase menu">
           <li>
-            <a class="active" href="index.html">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li>
-            <a href="artist.html">Каталог</a>
+            <a href="#">Каталог</a>
           </li>
           <li>
-            <a href="#">Исполнители</a>
+            <a class="active" href="artist.html">Исполнители</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -34,5 +34,116 @@
       <input class="bg-dark c-white search" placeholder="Поиск..." type="text">
     </div>
   </header>
+  <main>
+    <section id="page-description" class="bg-morten-harket py-200">
+      <div class="container">
+        <h1 class="mb-0">Morten Harket</h1>
+        <p class="c-white">24 875 поклонников</p>
+        <div class="d-flex flex-wrap mt-3 row-mx-12">
+          <button class="d-flex mx-12 mb-12 align-items-center text-small w-200 c-white btn btn-purple">
+            <img class="mr-1 filter-invert" src="images/play-button.svg" width="20" alt="Иконка кнопки 'Микс'.">
+            Микс
+          </button>
+          <button class="d-flex mx-12 mb-12 align-items-center text-small w-200 c-white btn btn-red">
+            <img class="mr-1 filter-invert" src="images/heart.svg" width="20" alt="Иконка кнопки 'В избранное'.">
+            В избранное
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gradient">
+    <div class="container pt-3 pb-3">
+      <div class="d-flex footer-section row flex-column flex-md-row">
+        <div class="col">
+          <h2 class="mb-15">О нас</h2>
+          <ul class="menu">
+            <li>
+              <a href="#">История компании</a>
+            </li>
+            <li>
+              <a href="#">Карьера</a>
+            </li>
+            <li>
+              <a href="#">Особенности</a>
+            </li>
+            <li>
+              <a href="#">Пресса</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2 class="mb-15">Поддержка</h2>
+          <ul class="menu">
+            <li>
+              <a href="#">База знаний</a>
+            </li>
+            <li>
+              <a href="#">Тарифы</a>
+            </li>
+            <li>
+              <a href="#">Мобильное приложение</a>
+            </li>
+            <li>
+              <a href="#">Условия использования</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2 class="mb-15">Контакты</h2>
+          <ul class="menu">
+            <li class="menu-item">
+              hello@music.box
+            </li>
+            <li class="menu-item">
+              Russia, Moscow. Music Box studio
+            </li>
+            <li class="menu-item">
+              + 7 499 999 99 99
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2 class="mb-15">Подписывайтесь</h2>
+          <div class="d-flex row-mx-12">
+            <a href="#" class="icon mx-12">
+              <img src="images/Google+.png" alt="Иконка Google+.">
+            </a>
+            <a href="#" class="icon mx-12">
+              <img src="images/Twitter.png" alt="Иконка Twitter.">
+            </a>
+            <a href="#" class="icon mx-12">
+              <img src="images/Facebook.png" alt="Иконка Facebook.">
+            </a>
+            <a href="#" class="icon mx-12">
+              <img src="images/Instagram.png" alt="Иконка Instagram.">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-splitter">
+    <div class="pt-2 pb-2 container">
+      <div class="footer-section px-20">
+        <ul class="d-flex menu flex-column flex-md-row footer-nav">
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Обслуживание</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+          <li>
+            <a href="#">Поддержка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

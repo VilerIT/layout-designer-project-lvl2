@@ -1,12 +1,3 @@
-// $min: $max
-$viewport-widths: (
-  320px: 374px, // Mobile M
-  375px: 424px, // Mobile L
-  425px: 767px, // Tablet
-  768px: 1023px, // Laptop
-  1024px: 1239px, // Laptop L
-);
-
 @font-face {
   font-weight: normal;
   font-family: 'Roboto';
@@ -52,12 +43,10 @@ h4 {
 
 h1 {
   @include heading(30px, 45px);
-  margin: 0;
 }
 
 h2 {
   @include heading(18px, 27px);
-  margin: 0;
 }
 
 h3 {
@@ -69,7 +58,10 @@ p {
 }
 
 .container {
+  width: 100%;
+
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .sr-only {
@@ -123,24 +115,8 @@ p {
   }
 }
 
-@each $min, $max in $viewport-widths {
-  @media (min-width: $min) and (max-width: $max) {
-    .container {
-      max-width: $min - 40px;
-    }
-  }
-}
-
-// !!! FOR TESTS. REMOVE AFTER COMPLETION.
-
-@media (width: 414px) {
-  .container {
-    max-width: 374px;
-  }
-}
-
 @media (min-width: 1240px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
