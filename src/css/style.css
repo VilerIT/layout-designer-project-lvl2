@@ -640,4 +640,15 @@ input {
   text-transform: capitalize;
 }
 
+.similar-img {
+  width: 100%;
+  vertical-align: middle;
+}
+.similar-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+}
+
 /*# sourceMappingURL=style.css.map */
