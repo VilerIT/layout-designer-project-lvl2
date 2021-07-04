@@ -3,6 +3,10 @@
   grid-template-columns: 1fr;
 }
 
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, calc(50% - 50px));
+}
+
 .row-gap-25 {
   row-gap: 25px;
 }
@@ -38,8 +42,11 @@
 
 @media screen and (min-width: 769px) {
   .grid-md-2 {
-    display: grid;
     grid-template-columns: repeat(auto-fit, calc(50% - 50px));
+  }
+
+  .grid-md-4 {
+    grid-template-columns: repeat(auto-fit, calc(25% - 50px));
   }
 
   .flex-md-row {

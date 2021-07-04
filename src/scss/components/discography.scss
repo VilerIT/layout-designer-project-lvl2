@@ -1,0 +1,14 @@
+.discography {
+  &-img {
+    width: 100%;
+
+    vertical-align: middle;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+  }
+}

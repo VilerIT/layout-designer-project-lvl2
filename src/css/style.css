@@ -102,7 +102,7 @@ p {
 }
 @media (min-width: 1240px) {
   .container {
-    width: 1200px;
+    width: 1240px;
   }
 
   .order-lg-1 {
@@ -332,6 +332,10 @@ p {
   grid-template-columns: 1fr;
 }
 
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, calc(50% - 50px));
+}
+
 .row-gap-25 {
   row-gap: 25px;
 }
@@ -366,8 +370,11 @@ p {
 
 @media screen and (min-width: 769px) {
   .grid-md-2 {
-    display: grid;
     grid-template-columns: repeat(auto-fit, calc(50% - 50px));
+  }
+
+  .grid-md-4 {
+    grid-template-columns: repeat(auto-fit, calc(25% - 50px));
   }
 
   .flex-md-row {
@@ -620,6 +627,17 @@ input {
 }
 .track-title {
   font-weight: bold;
+}
+
+.discography-img {
+  width: 100%;
+  vertical-align: middle;
+}
+.discography-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
