@@ -1,0 +1,36 @@
+.news {
+  &-item {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  &-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-transform: none;
+  }
+
+  &-author {
+    margin: 24px -8px 48px;
+  }
+
+  &-button {
+    padding: 16px 30px;
+
+    font-size: 0.8rem;
+  }
+}
+
+.news-author * {
+  margin: 0 8px;
+}
+
+@media (min-width: 769px) {
+  .news-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}

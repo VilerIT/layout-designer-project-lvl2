@@ -1,3 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.row-gap-25 {
+  row-gap: 25px;
+}
+
+.column-gap-50 {
+  column-gap: 50px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +36,12 @@
   margin-left: -25px;
 }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
+  .grid-md-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(50% - 50px));
+  }
+
   .flex-md-row {
     flex-direction: row;
   }
