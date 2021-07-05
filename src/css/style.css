@@ -262,6 +262,11 @@ p {
   filter: invert(1);
 }
 
+@media screen and (min-width: 769px) {
+  .mt-md-0 {
+    margin-top: 0;
+  }
+}
 .bg-dark {
   background-color: #3c3b3d;
 }
