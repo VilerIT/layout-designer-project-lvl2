@@ -467,6 +467,7 @@ input {
 }
 
 .btn {
+  display: inline-block;
   padding: 20px 30px;
   border: unset;
   border-radius: 5px;
@@ -474,10 +475,6 @@ input {
   text-decoration: none;
   background-color: unset;
   cursor: pointer;
-}
-
-.link-btn {
-  display: inline-block;
 }
 
 .download-button {

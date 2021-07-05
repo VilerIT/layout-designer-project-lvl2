@@ -1,4 +1,6 @@
 .btn {
+  display: inline-block;
+
   padding: 20px 30px;
 
   border: unset;
@@ -10,10 +12,6 @@
   background-color: unset;
 
   cursor: pointer;
-}
-
-.link-btn {
-  display: inline-block;
 }
 
 @mixin btn($name, $color, $hover-color) {
