@@ -9,6 +9,10 @@
     border-radius: 1rem;
   }
 
+  &-title {
+    font-weight: normal;
+  }
+
   &-price {
     display: flex;
     justify-content: center;
@@ -20,5 +24,11 @@
   &-price-value {
     font-size: 2em;
     line-height: 1em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .pricing-title {
+    font-size: 1.5rem;
   }
 }

@@ -33,17 +33,14 @@ h4 {
 
 h1 {
   font-size: 30px;
-  line-height: 45px;
 }
 
 h2 {
   font-size: 18px;
-  line-height: 27px;
 }
 
 h3 {
   font-size: 16px;
-  line-height: 24px;
 }
 
 p {
@@ -87,18 +84,15 @@ p {
 @media (min-width: 769px) {
   h1 {
     font-size: 60px;
-    line-height: 90px;
   }
 
   h2 {
     font-size: 38px;
-    line-height: 57px;
   }
 
   h3 {
-    font-size: 24px;
-    line-height: 45px;
     font-weight: normal;
+    font-size: 24px;
   }
 }
 @media (min-width: 1240px) {
@@ -536,6 +530,9 @@ input {
   padding-left: 1.5rem;
   border-radius: 1rem;
 }
+.pricing-title {
+  font-weight: normal;
+}
 .pricing-price {
   display: flex;
   justify-content: center;
@@ -547,6 +544,11 @@ input {
   line-height: 1em;
 }
 
+@media screen and (min-width: 769px) {
+  .pricing-title {
+    font-size: 1.5rem;
+  }
+}
 .news-item {
   display: grid;
   grid-gap: 50px;
