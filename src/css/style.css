@@ -71,12 +71,11 @@ p {
   padding: 0;
   list-style-type: none;
 }
-.menu a,
-.menu .menu-item {
+.menu-item, .menu-item a {
   color: #cacaca;
   text-decoration: none;
 }
-.menu a:hover,
+.menu-item a:hover,
 .menu .active {
   color: #fff;
 }
@@ -169,12 +168,12 @@ p {
   margin-top: 3rem;
 }
 
-.mt-45 {
-  margin-top: 2.5rem;
+.mt-40 {
+  margin-top: 40px;
 }
 
-.mt-25 {
-  margin-top: 25px;
+.mt-24 {
+  margin-top: 24px;
 }
 
 .mb-0 {
@@ -561,7 +560,7 @@ input {
   text-transform: capitalize;
 }
 .news-author {
-  margin: 24px -8px 48px;
+  margin: 0 -8px;
 }
 .news-button {
   padding: 16px 30px;

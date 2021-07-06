@@ -84,13 +84,13 @@ p {
 
   list-style-type: none;
 
-  a,
-  .menu-item {
+  &-item,
+  &-item a {
     color: $dark-gray;
     text-decoration: none;
   }
 
-  a:hover,
+  &-item a:hover,
   .active {
     color: $white;
   }
