@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+.btn-flex {
+  display: flex;
+}
+
 @mixin btn($name, $color, $hover-color) {
   .btn-#{$name} {
     background-color: $color;
