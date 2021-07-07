@@ -85,12 +85,12 @@ p {
   list-style-type: none;
 
   &-item,
-  &-item a {
+  &-link {
     color: $dark-gray;
     text-decoration: none;
   }
 
-  &-item a:hover,
+  &-link:hover,
   .active {
     color: $white;
   }

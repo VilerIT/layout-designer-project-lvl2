@@ -71,11 +71,11 @@ p {
   padding: 0;
   list-style-type: none;
 }
-.menu-item, .menu-item a {
+.menu-item, .menu-link {
   color: #cacaca;
   text-decoration: none;
 }
-.menu-item a:hover,
+.menu-link:hover,
 .menu .active {
   color: #fff;
 }
@@ -559,7 +559,8 @@ input {
   text-transform: capitalize;
 }
 .news-author {
-  margin: 0 -8px;
+  margin-right: -8px;
+  margin-left: -8px;
 }
 .news-button {
   padding: 16px 30px;
