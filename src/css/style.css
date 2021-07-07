@@ -16,7 +16,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: #cacaca;
-  font-size: 18px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   background-color: #08020d;
@@ -31,15 +30,18 @@ h4 {
   text-transform: uppercase;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 30px;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 18px;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 16px;
 }
 
@@ -81,17 +83,25 @@ p {
 }
 
 @media (min-width: 769px) {
-  h1 {
+  h1,
+.h1 {
     font-size: 60px;
   }
 
-  h2 {
+  h2,
+.h2 {
     font-size: 38px;
   }
 
-  h3 {
+  h3,
+.h3 {
     font-weight: normal;
     font-size: 24px;
+  }
+
+  h4,
+.h4 {
+    font-size: 18px;
   }
 }
 @media (min-width: 1240px) {
@@ -577,27 +587,9 @@ input {
     line-height: 45px;
   }
 }
-.footer-section {
-  width: 100%;
-  white-space: nowrap;
-}
-.footer-section h2 {
-  font-size: 18px;
-  line-height: 27px;
-}
-.footer-section a,
-.footer-section .menu-item {
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .icon {
+  vertical-align: middle;
   cursor: pointer;
-}
-
-.footer-splitter {
-  margin: 0;
-  border-bottom: 1px solid #cacaca;
 }
 
 .footer-nav {
