@@ -1,5 +1,5 @@
 {
-  "name": "layout-designer-project-lvl2",
+  "name": "music-box",
   "version": "1.0.0",
   "description": "Layout design for Music Box.",
   "main": "",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilerIT/layout-designer-project-lvl2.git"
+    "url": "git+https://github.com/VilerIT/music-box.git"
   },
   "author": "VilerIT",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VilerIT/layout-designer-project-lvl2/issues"
+    "url": "https://github.com/VilerIT/music-box/issues"
   },
-  "homepage": "https://github.com/VilerIT/layout-designer-project-lvl2#readme",
+  "homepage": "https://github.com/VilerIT/music-box#readme",
   "devDependencies": {
     "htmlhint": "^0.15.1",
     "stylelint": "^13.13.1",
