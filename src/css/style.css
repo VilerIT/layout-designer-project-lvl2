@@ -96,8 +96,7 @@ p {
 }
 @media (min-width: 1240px) {
   .container {
-    width: 1200px;
-    padding: 0;
+    width: 1240px;
   }
 
   .order-lg-1 {
